@@ -12,11 +12,38 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/website syles.css"> 
 </head>
-<body>
-     <div class="grid grid--cols-3">
-        <div style="height: 100px; background: purple;"></div>
-        <div style="height: 100px; background: greenyellow;"></div>
-        <div style="height: 100px; background: black;"></div>
+<body style="padding: 5rem;">
+    <div class="card testimonial">
+        <div class="grid grid--cols-2">
+            <div class="testimonial__image">
+                <img src="Images/testimonial.jpg" alt="CEO Of the company.">
+                <span class="icon-container icon-container--accent">
+                    <svg class="icon icon--yellow icon--small">
+                        <use xlink:href="Images/sprite.svg#quotes"></use>
+                      </svg>
+                </span>
+            </div>
+            <blockquote class="quote">
+                <p class="quote__text">
+                    I'm so proud of what our team has accomplished this year. We've seen record growth, and our products are resonating with customers like never before. This is a testament to the hard work and dedication of everyone here.
+
+                    I know that we can achieve even greater things in the future. We have a clear vision for the company, and we're committed to making it a reality. I'm excited to see what we can accomplish together.
+                </p>
+                <footer class="quote__footer">
+                    <div class="media">
+                        <div class="media__image ">
+                            <svg class="icon icon--primary quote__line">
+                                <use xlink:href="Images/sprite.svg#line"></use>
+                              </svg>
+                        </div>
+                        <div class="media__body">
+                        <h3 class="media__title quote__author">Marcus Johnson</h3>
+                        <p class="quote__company">Obmet Corp. CEO</p>
+                        </div>
+                    </div>
+                </footer>
+             </blockquote>
+             </div>
     </div>
 </body>
 </html>
