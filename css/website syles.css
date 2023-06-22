@@ -342,6 +342,10 @@ a:hover{
     color: var(--color-headings);
 }
 
+.card--primary h3{
+    color: #000;
+}
+
 .card--secondary .card__header{
     background-color: var(--color-secondary);
     color: var(--color-primary);
@@ -352,6 +356,10 @@ a:hover{
 }
 
 /* Plans */
+.plan{
+    transition: transform .20s ease-out;
+}
+
 .plan__name{
     color: var(--color-primary);
     margin: 0;
@@ -381,6 +389,9 @@ a:hover{
     margin-bottom: 2rem;
     letter-spacing: 1px;
 }
+.plan--popular{
+    transform: scale(1.1);
+}
 
 .plan--popular .card__header{
     position: relative;
@@ -395,7 +406,14 @@ a:hover{
     right: 5%;
 }
 
-
+.plan:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.plan--popular:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
 
 @media screen and (min-width: 1024px) {
     .plan__name{
@@ -752,12 +770,37 @@ a:hover{
 }
 
 @media screen and (min-width: 768px){
-    .block-domain__prices{
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        /* If this causes any problems, change max-width back to 700px */
-        max-width: 828px;
-        margin: 0 auto;
+.block-domain__prices{
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    /* If this causes any problems, change max-width back to 700px */
+    max-width: 828px;
+     margin: 0 auto;
         
     }
 
 }
+
+/* Plans Block */
+.block-plans .grid{
+    gap:8rem 4rem;
+}
+
+.block-plans .card{
+    max-width: 500px;
+    margin:0 auto ;
+}
+
+
+
+@media screen and (min-width: 768px){
+    /* /* .container.block{
+        display: flex;
+    }
+
+    .card--secondary{
+        margin: 0 3rem;
+
+    } */
+
+} 
+
