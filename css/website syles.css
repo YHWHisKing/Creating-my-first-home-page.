@@ -79,6 +79,8 @@ a{
 
     font-size: 2rem;
     font-weight: bold;
+    border-radius: 1rem;
+    padding: 1rem;
 }
 
 .link-arrow::after{
@@ -89,9 +91,11 @@ a{
 
 .link-arrow:hover::after{
     margin-left: 10px;
-   
+    
 
 }
+
+
 
 @media screen and (min-width: 1024px) {
     .link-arrow{
@@ -789,18 +793,29 @@ a:hover{
     max-width: 500px;
     margin:0 auto ;
 }
+ 
 
+/* Features*/
+.feature{
+    gap: 4rem 2rem;
+    margin: 12rem 0;
+}
 
+.feature:first-of-type{
+    margin-top: 6rem;
+}
+
+.features__heading{
+    margin:1rem 0;
+}
+
+.feature__image{
+    border-radius: 1.5rem;
+    width: 100% ;
+}
 
 @media screen and (min-width: 768px){
-    /* /* .container.block{
-        display: flex;
-    }
-
-    .card--secondary{
-        margin: 0 3rem;
-
-    } */
-
-} 
-
+     .feature:nth-of-type(even) .feature__content{
+        order: 2;
+     }
+}
