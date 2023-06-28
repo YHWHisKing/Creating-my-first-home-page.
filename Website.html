@@ -13,66 +13,47 @@
     <link rel="stylesheet" href="css/website syles.css"> 
 </head>
 <body > 
-     <section class="block block--dark block__skewed-right block-showcase">
+    <section class="block">
         <header class="block__header">
-            <h2>User-Friendly Control Panel</h2>
+            <h2>What our Customers are Saying</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, nostrum.</p>
         </header>
-        <div class="container  grid grid--cols-2">
-            <picture class="block-showcase__image">
-                <source
-                type="images/webp" srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
-                >
-                <source
-                type="images/png" srcset="images/ipad.png 1x, images/ipad@2x.png 2x"
-                >
-                <img  src="Images/ipad.png" alt="">
-            </picture>
-            <ul class="list">
-                <li>
-                    <div class="media">
-                        <div class="media__image">
-                                <svg class="icon icon--yellow ">
-                                    <use xlink:href="Images/sprite.svg#clock"></use>
-                                  </svg>
-                        </div>
-                        <div class="media__body">
-                        <h3 class="media__title">Easy Start & Managed Updates</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ut, amet cum impedit nam veritatis quis eligendi minus voluptates pariatur.</p>
-                        </div>
+        <div class="container">
+            <div class="card testimonial">
+                <div class="grid grid--cols-2">
+                    <div class="testimonial__image">
+                        <img src="Images/testimonial.jpg" alt="CEO Of the company.">
+                        <span class="icon-container icon-container--accent">
+                            <svg class="icon icon--yellow icon--small">
+                                <use xlink:href="Images/sprite.svg#quotes"></use>
+                              </svg>
+                        </span>
                     </div>
-                </li>
-                <li>
-                    <div class="media">
-                        <div class="media__image">
-                                <svg class="icon icon--yellow ">
-                                    <use xlink:href="Images/sprite.svg#growth"></use>
-                                  </svg>
-                            
-                        </div>
-                        <div class="media__body">
-                        <h3 class="media__title">Staging, Git&WP-CLI</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ut, amet cum impedit nam veritatis quis eligendi minus voluptates pariatur.</p>
-                        </div>
-                    </div> 
-                </li>
-                <li>
-                    <div class="media">
-                        <div class="media__image">
-                                <svg class="icon icon--yellow ">
-                                    <use xlink:href="Images/sprite.svg#wordpress"></use>
-                                  </svg>
-                            
-                        </div>
-                        <div class="media__body">
-                        <h3 class="media__title">Dynamic Caching & More</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam ut, amet cum impedit nam veritatis quis eligendi minus voluptates pariatur.</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>    
+                    <blockquote class="quote">
+                        <p class="quote__text">
+                            I'm so proud of what our team has accomplished this year. We've seen record growth, and our products are resonating with customers like never before. <br><br>
+                            This is a testament to the hard work and dedication of everyone here.
+                            I know that we can achieve even greater things in the future. <br><br> 
+                            We have a clear vision for the company, and we're committed to making it a reality. I'm excited to see what we can accomplish together.
+                        </p>
+                        <footer class="quote__footer">
+                            <div class="media">
+                                <div class="media__image ">
+                                    <svg class="icon icon--primary quote__line">
+                                        <use xlink:href="Images/sprite.svg#line"></use>
+                                      </svg>
+                                </div>
+                                <div class="media__body">
+                                <h3 class="media__title quote__author">Marcus Johnson</h3>
+                                <p class="quote__company">Obmet Corp. CEO</p>
+                                </div>
+                            </div>
+                        </footer>
+                     </blockquote>
+                     </div>
+            </div>
         </div>
-     </section>
-
+    </section>
       <script src="js/main.js"></script>
 </body>
 </html>
